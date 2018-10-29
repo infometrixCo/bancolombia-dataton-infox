@@ -1,5 +1,13 @@
 # bancolombia-dataton-infox
 
+## Instrucciones para provar ficha de ejemplo
+
+Copiar el contenido de la carpeta ficha en cualquier servidor http, o usar ````serve``` dentro de la carpeta ficha. 
+
+```serve``` es un comando de npm que se instala con ```npm install serve```
+
+en caso de no tener ```npm``` instalar nodejs de https://nodejs.org/en/
+
 ## Propuesta de negocio
 
 ### AS-IS
