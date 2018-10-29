@@ -1,0 +1,70 @@
+{
+    "datos_numericos_para_el_pie": [
+        [
+            {
+                "dato1": 0.2,
+                "dato2": 0.1,
+                "dato3": 0.4,
+                "dato4": 0.2,
+                "dato5": 0.1
+            },
+            {
+                "dato2": 0.3,
+                "dato3": 0.2,
+                "dato4": 0.4,
+                "dato5": 0.1
+            },
+            {
+                "dato1": 0.3,
+                "dato2": 0.2,
+                "dato3": 0.1,
+                "dato4": 0.1,
+                "dato5": 0.2
+            },
+            {
+                "dato1": 0.4,
+                "dato2": 0.4,
+                "dato3": 0.2
+            },
+            {
+                "dato1": 0.5,
+                "dato2": 0.1,
+                "dato3": 0.1,
+                "dato4": 0.1,
+                "dato5": 0.3
+            }
+        ]
+    ],
+    "2": [
+        {
+            "dato_alfanumerico_1": "maria lourdes baute araujo",
+            "dato_alfanumerico_2": "88.2",
+            "dato_alfanumerico_3": "Super combo",
+            "dato_alfanumerico_4": "Super combo"
+        },
+        {
+            "dato_alfanumerico_1": "carlos alberto ramos guzman",
+            "dato_alfanumerico_2": "88.2",
+            "dato_alfanumerico_3": "Super combo",
+            "dato_alfanumerico_4": "Super combo"
+        },
+        {
+            "dato_alfanumerico_1": "sara suarez orodonez",
+            "dato_alfanumerico_2": "88.2",
+            "dato_alfanumerico_3": "Super combo",
+            "dato_alfanumerico_4": "Super combo"
+        },
+        {
+            "dato_alfanumerico_1": "luis alfredo suarez gaitan",
+            "dato_alfanumerico_2": "88.2",
+            "dato_alfanumerico_3": "Super combo",
+            "dato_alfanumerico_4": "Super combo"
+        },
+        {
+            "dato_alfanumerico_1": "vanessa paola mejia moron",
+            "dato_alfanumerico_2": "88.2",
+            "dato_alfanumerico_3": "Super combo",
+            "dato_alfanumerico_4": "Super combo"
+        }
+    ]
+}
