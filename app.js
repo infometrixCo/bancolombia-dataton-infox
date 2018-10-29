@@ -8,7 +8,7 @@ var main = function () {
         var label1 = "";
         var label2 = "";
         var label3 = "";
-        var nameR = '';
+        var idR = '';
         var fugaR = '';
         var transR = '';
         var planR = '';
@@ -19,12 +19,12 @@ var main = function () {
             pieData = data.datos_numericos_para_el_pie[0][index]
             var keys = Object.keys(item);
             return $('<option>', {
-                text: item.dato_alfanumerico_1,
+                text: item.id,
                 value: index,
-                name: item.dato_alfanumerico_1,
-                fuga: item.dato_alfanumerico_2,
-                trans: item.dato_alfanumerico_3,
-                plan: item.dato_alfanumerico_4,
+                name: item.id,
+                fuga: item.pago_mas_frecuente,
+                trans: item.meses_vinculado,
+                plan: item.gasto_promedio_mensual,
                 label1 : keys[1],
                 label2 : keys[2],
                 label3 : keys[3]
@@ -37,9 +37,9 @@ var main = function () {
             label1 = $('option:selected', this).attr('label1');
             label2 = $('option:selected', this).attr('label2');
             label3 = $('option:selected', this).attr('label3');
-            nameR = $('option:selected', this).attr('name');
+            idR = $('option:selected', this).attr('id');
             fugaR = $('option:selected', this).attr('fuga');
-            transR = $('option:selected', this).attr('fuga');
+            transR = $('option:selected', this).attr('trans');
             planR = $('option:selected', this).attr('plan');
             indice = $('option:selected', this).attr('value');
         });
@@ -48,7 +48,7 @@ var main = function () {
             $("#label1").html(label1);
             $("#label2").html(label2);
             $("#label3").html(label3);
-            $("#nameR").html(nameR);
+            $("#nameR").html(idR);
             $("#fugaR").html(fugaR);
             $("#transR").html(transR);
             $("#planR").html(planR);
@@ -82,11 +82,11 @@ var main = function () {
             radius = Math.min(width, height) / 2;
 
         var myColors = {
-            "dato1": "#f9c80e",
-            "dato2": "#f86624",
-            "dato3": "#ea3546",
-            "dato4": "#662e9b",
-            "dato5": "#43bccd"
+            "recargas_telefonia": "#f9c80e",
+            "servicios_varios": "#f86624",
+            "financieros_comercial": "#ea3546",
+            "impuestos": "#662e9b",
+            "compras": "#43bccd"
         }
         var pie = d3.layout.pie()
             .sort(null)
