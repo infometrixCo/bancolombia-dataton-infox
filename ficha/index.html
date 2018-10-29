@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataton - ficha </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="infometrix.com" />
+    <meta name="date" content="2018" />
+    <meta name="author" content="infometrix.com" />
+    <meta name="theme-color" content="#0a416c" />
+
+
+    <link rel="stylesheet" type="text/css" href='vendor/theme-white.css'>
+    <link rel="stylesheet" type="text/css" href='vendor/bootstrap/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href='vendor/animate/animate.min.css'>
+    <link rel="stylesheet" type="text/css" href='app.css'>
+
+    <script type="text/javascript" src='plugins/jquery/jquery.min.js'></script>
+    <script type="text/javascript" src='plugins/jquery/jquery-ui.min.js'></script>
+    <script type="text/javascript" src='plugins/jquery/jquery-migrate.min.js'></script>
+    <script type="text/javascript" src='plugins/bootstrap/bootstrap-file-input.js'></script>
+    <script type="text/javascript" src='plugins/bootstrap/bootstrap-select.js'></script>
+    <script type="text/javascript" src='plugins/bootstrap/bootstrap.min.js'></script>
+    <script type="text/javascript" src='demo/main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div style="visibility: hidden; display: none">
+        <input type="hidden" name="csrf_token" value="infometrixsafe">
+    </div>
+
+    <!-- START PAGE CONTAINER -->
+    <div class="page-container bgDash">
+
+        <i class="glyphicon glyphicon-search"></i>
+        &#xe003;
+        <!-- PAGE CONTENT -->
+        <div class="page-content">
+            <!-- START X-NAVIGATION VERTICAL -->
+            <ul class="x-navigation x-navigation-horizontal x-navigation-panel header-panel">
+                <li class="xn-logo">
+                    <a href="http://www.infometrix.co" class="logo-infometrix">
+                        <img src="images/logo-infometrix.png" alt="Infometrix" />
+                    </a>
+                </li>
+            </ul>
+            <div class="title-site">
+                <h1>Realizar consulta</h1>
+            </div>
+
+            <div class="clear"></div>
+
+            <!-- USER QUERY -->
+            <div class="row margin_none">
+                <div class="widget-holder widget-full-height widget-flex col-md-12 users_filter">
+                    <div class="widget-bg">
+                        <div class="widget-heading">
+                            <h4 class="widget-title">
+                                <small class="h5 ml-1 my-0 fw-500">Ingrese datos de usuario</small>
+                            </h4>
+                        </div>
+                        <div class="widget-body">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <!-- <input type="text" name="search" id="search" placeholder="Buscar usuario" class="form-control" /> -->
+                                    <!-- <ul class="list-group" id="result"></ul> -->
+                                    <select id="selector_user" class="glyphicon form-control">
+                                        <option value='' >Seleccione un usuario &#xe003;</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-primary block filterUser" disabled="disabled">Consultar</button>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-holder widget-full-height widget-flex col-md-12">
+                    <div class="widget-bg">
+                        <div class="widget-heading">
+                            <h4 class="widget-title">
+                                <small class="h5 ml-1 my-0 fw-500">Infomación de usuario</small>
+                            </h4>
+                        </div>
+                        <div class="widget-body sin_padd">
+                            <div class="result_user_query blur_content">
+                                <div class="alert_result">
+                                    <div class="relative wow fadeInUp">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <h3>Ingresa un usuario en la parte superior <br>para ver más información!</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 sin_padd">
+                                    <div class="card_user_bg">
+                                        <div class="card_content">
+                                            <div id="chart"></div>
+                                            <div class="legend">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="padd_all bg_obsequio">
+                                        <!-- <canvas id="radarChart" class="charJs"></canvas> -->
+                                        <ul class="listobsequio row">
+                                            <li class="col-md-6">
+                                                <div class="panel">
+                                                    <div class="col-md-4">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5 id="label1"></h5>
+                                                        <span class="line"><i id="fugaR"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <div class="panel">
+                                                    <div class="col-md-4">
+                                                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5 id="label2"></h5>
+                                                        <span class="line"><i id="transR"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <div class="panel">
+                                                    <div class="col-md-4">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5 id="label3"></h5>
+                                                        <span class="line" id="planR">Plan X</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- USER QUERY -->
+
+        </div>
+        <!-- END PAGE CONTENT -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <span class="heading-font-family">Copyright @ 2018 - <b>Infometrix.com</b> - Todos los derechos reservados.</span>
+        </footer>
+        <!-- END FOOTER -->
+
+    </div>
+    <!-- END PAGE CONTAINER -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
