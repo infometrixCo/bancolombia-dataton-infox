@@ -1,8 +1,12 @@
 # bancolombia-dataton-infox
 
-## Instrucciones para provar ficha de ejemplo
+## Instrucciones para revisar analisis de datos
 
-Copiar el contenido de la carpeta ficha en cualquier servidor http, o usar ````serve``` dentro de la carpeta ficha. 
+Abrir archivo ```dataton_bancolombia.ipynb``` con jupyter notebook. Si quieren correr el codigo, deben tener instalado el kernel de R.
+
+## Instrucciones para probar ficha de ejemplo
+
+Copiar el contenido de la carpeta ficha en cualquier servidor http, o usar ```serve``` dentro de la carpeta ficha. 
 
 ```serve``` es un comando de npm que se instala con ```npm install serve```
 
