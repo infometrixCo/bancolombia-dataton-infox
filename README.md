@@ -10,4 +10,4 @@ Se propone integrar la funcionalidad para los clientes Bancolombia, que permita 
 
 ###
 
-![mockup](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "mockup")
+![mockup](https://raw.githubusercontent.com/infometrixCo/bancolombia-dataton-infox/ficha/images/dataton.png "mockup")
