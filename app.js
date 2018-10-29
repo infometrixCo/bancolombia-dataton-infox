@@ -21,7 +21,7 @@ var main = function () {
             return $('<option>', {
                 text: item.id,
                 value: index,
-                name: item.id,
+                id: item.id,
                 fuga: item.pago_mas_frecuente,
                 trans: item.meses_vinculado,
                 plan: item.gasto_promedio_mensual,
